@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<style>
+  h2{
+    color:rgb(86, 49, 223);
+    font-size:70px;
+    
+    
+      margin: 50px;
+          text-align: center;
+          
+  }
+
+  h3{color:rgb(216, 54, 62);
+    font-size:50px;
+    
+    
+      margin: 20px;
+          text-align: center;
+          
+
+  }
+</style>
+
+ 
+ 
+  <h2><u>DIGITAL CLOCK</u></h2>
+  <h3><u>24-HOUR FORMAT</u></h3>
+    <style>
+      #dig_clock {
+          font-size: 200px;
+          width: 1000px;
+          margin: 180px;
+          text-align: center;
+          color:rgb(29, 35, 94);
+          border: 5px solid rgb(46, 15, 82);
+          background-color: rgb(226, 43, 134);
+          border-radius: 10px;
+      }
+  </style>
+<body style="background-color: rgb(214, 230, 125);">
+        <div id="dig_clock">00:00:00</div>
+        <script>
+            setInterval(displayTime,500);
+
+            function displayTime(){
+                let time = new Date();
+
+        let hr = time.getHours();
+        let min = time.getMinutes();
+        let sec = time.getSeconds();
+       
+
+      hr = hr < 10 ? "0" + hr : hr;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+
+      let timeNow = hr + ":" + min + ":" + sec ;
+      document.getElementById('dig_clock').innerHTML = timeNow;
+
+    }
+      
+ 
+
+
+
+displayTime();
+        </script>
+    
+    </body>
+</html>
