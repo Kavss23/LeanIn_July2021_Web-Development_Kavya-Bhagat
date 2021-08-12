@@ -1,0 +1,50 @@
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ 
+
+}
+
+.container{
+background-color: aqua;
+min-height: 100vh;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.greeting_text{
+  font-size: 5rem;
+  color: darkmagenta;
+  text-align: center;
+  font-weight: 200;
+  text-shadow: 2px 4px 10px rgba(0,0,0,0,2);
+}
+
+.time{
+  color:rgb(233, 181, 10);
+  display: flex;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .date{
+    color:rgb(245, 44, 161);
+    font-size:2rem;
+    font-weight: 200;
+    
+
+  }
